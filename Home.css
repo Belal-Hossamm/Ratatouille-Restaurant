@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./images/wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.order-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: darkred;
+}
+
+.home {
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 120px;
+}
+
+.content {
+    width: 500px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.main-title {
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 10px black;
+}
+
+.main-title span {
+    color: red;
+    text-shadow: 4px 4px 10px black;
+}
+
+.main-text {
+    color: #ddd;
+    line-height: 28px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.start-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.start-btn:hover {
+    background-color: darkred;
+}
+
+.welcome {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px 30px;
+}
+
+.welcome h2 {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.welcome p {
+    width: 70%;
+    margin: auto;
+    line-height: 30px;
+}
+
+.choose {
+    background-color: rgba(20, 20, 20, 0.9);
+    padding: 70px;
+    text-align: center;
+}
+
+.choose h2 {
+    color: red;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 25px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}

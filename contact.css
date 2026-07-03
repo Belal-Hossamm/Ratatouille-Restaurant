@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./images/wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.order-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: darkred;
+}
+
+.contact {
+    padding: 60px;
+    text-align: center;
+}
+
+.contact h1 {
+    color: red;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.sub-title {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 3px 3px 8px black;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.info-card {
+    width: 350px;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.info-card h2 {
+    color: red;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-card p {
+    margin-bottom: 18px;
+    line-height: 28px;
+}
+
+.form-card {
+    width: 550px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-card input,
+.form-card textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-card textarea {
+    height: 180px;
+    resize: none;
+}
+
+.form-card button {
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-card button:hover {
+    background-color: darkred;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.social {
+    text-align: center;
+    margin-top: 60px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.social h2 {
+    color: red;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: red;
+}
