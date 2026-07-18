@@ -33,23 +33,42 @@ if (sendBtn) {
 
     sendBtn.onclick = function() {
 
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        let message = document.getElementById("message").value;
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let message = document.getElementById("message").value.trim();
 
-        if (name == "" || email == "" || message == "") {
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-            alert("Please fill in all fields.");
-
-        } else {
-
-            alert("Your message has been sent successfully!");
-
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-
+        if (name == "") {
+            alert("Please enter your name.");
+            return;
         }
+
+        if (email == "") {
+            alert("Please enter your email.");
+            return;
+        }
+
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        if (message == "") {
+            alert("Please enter your message.");
+            return;
+        }
+
+        if (message.length < 10) {
+            alert("Message must be at least 10 characters.");
+            return;
+        }
+
+        alert("Your message has been sent successfully!");
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
 
     };
 
